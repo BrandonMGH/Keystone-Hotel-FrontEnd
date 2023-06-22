@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { BrowserRouter as BrowserRouter, Route, Routes } from 'react-router-dom'
 
 //* PAGES  *//
 import Main from './Pages/Main/Main.js'
@@ -18,16 +18,17 @@ const App = () => {
     return (
         <div>
         <Navbar />
-        <Router>
-            <Route path="/" exact component={Main} />
-            <Route path="/hotel" exact component={TheHotel} />
-            <Route path="/rooms" exact component={Rooms} />
-            <Route path="/dining" exact component={Dining} />
-            <Route path="/spa" exact component={Spa} />
-            <Route path="/areaAttractions" exact component={AreaAttractions} /> 
-            <Route path="/reservations" exact component={Reservations} /> 
-           
-        </Router>
+        <BrowserRouter>
+            <Routes>
+            <Route path="/" element={<Main />} />
+            <Route path="hotel" element={<TheHotel />} />
+            <Route path="rooms" element={<Rooms />} />
+            <Route path="dining" element={<Dining />} />
+            <Route path="spa" element={<Spa />} />
+            <Route path="areaAttractions" element={<AreaAttractions />} />
+            <Route path="reservations" element={<Reservations />} />
+            </Routes>
+        </BrowserRouter>
         <Footer />
         </div>
     )
