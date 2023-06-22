@@ -1,0 +1,122 @@
+#restaurantModalClose{
+    font-size: 30px;
+    font-weight: bold;
+    position: relative; 
+    right: 45%;
+    top: 50%;
+    color: white;
+}
+
+#restaurantModalClose:hover{
+    color: blue;
+    cursor: pointer
+}
+
+#restaurantMoelTextContainer{
+    background-size: cover;
+    width: 100%; 
+    padding-top: 62px;
+    padding-bottom: 62px;
+    display: flex; 
+    justify-content: center; 
+}
+
+#restaurantModelText{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white; 
+    font-size: 24px;
+    padding: 20px; 
+    width: 100%; 
+ }
+
+
+#restaurantModelMenuContainer{
+    display:grid; 
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    height: 80%; 
+}
+
+.restaurantModelMenuItems{
+    padding: 2%;
+    margin: 2%;  
+}
+
+#restaurantsContainer{
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+}
+
+#restaurantsImageContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+#restaurantsImage{
+    width: 90%; 
+    height: 50%; 
+    margin: 2%; 
+}
+
+#restaurantTitleAndDescriptionContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr;
+    grid-template-areas: 
+    "resTitleArea resTitleArea"
+    "resDescOne resDescTwo";
+}
+
+#restaurantTitleContainer{
+    grid-area:resTitleArea;
+    border: black double 5px;
+    margin: 2%; 
+    padding: 2%; 
+    text-align: center; 
+    font-size: 30px; 
+
+}
+
+#restaurantDescriptionOne{
+    grid-area: resDescOne;
+    border: black double 5px;
+  
+    margin: 2%; 
+    padding: 5%;
+
+}
+
+#restaurantDescriptionTwo{
+    grid-area: resDescTwo;
+    border: black double 5px;
+    margin: 2%; 
+    padding: 5%;
+
+}
+
+#restaurantMenuModal{
+    background-color: white;
+    color: black; 
+    padding: 3%; 
+    border: 2px solid black;
+    
+}
+
+#restaurantMenuModal:hover {
+    background-color: black;
+    color: white; 
+    border: 2px solid white; 
+    cursor: pointer;
+}
+
+@media (max-width: 900px){
+#restaurantModelMenuContainer{
+    font-size: 12px;    
+    }
+#restaurantsContainer{
+    grid-template-columns: 1fr;
+    }
+}

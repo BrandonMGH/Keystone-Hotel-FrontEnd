@@ -1,0 +1,148 @@
+/* ROOM SECTION ONE */
+
+#roomsSectionOne{
+    background-image: url('../../Images/HotelInteriorThree.jpeg');
+    height: 750px; 
+    background-size: cover;
+ }
+
+ #roomSectionOneText {
+    position: relative;
+    top: 40%; 
+    left: 25%;
+    padding: 1%;
+    width: 50%; 
+    border-radius: 10px;
+    background-color: rgba(0,0,0, .6);
+    color: white; 
+    text-align: center;
+    font-size: 35px; 
+ }
+
+/* ROOM SECTION TWO */ 
+
+#roomSectionTwoQuote {
+    position: relative; 
+    left: 10%; 
+    top: 100px; 
+    width: 50%; 
+    font-size: 35px; 
+}
+
+#roomSectionTwoImg {
+    position: relative;
+    top: -10px; 
+    width: 25%; 
+    left: 55%; 
+}
+
+#roomSectionTwoImgOne {
+    width: 100%; 
+}
+
+#roomSectionTwoDescription {
+    position: relative; 
+    left: 20%;
+    bottom: 100px; 
+    width: 50%; 
+    background: rgba(255, 248, 112, 0.3);
+    font-size: 20px;  
+    padding: 2%;
+    border-radius: 10px;
+}
+
+#roomSectionThree{
+    display: grid; 
+    justify-items: center;
+}
+
+#roomSectionThreeButtons {
+   height: 50px;
+   width: 80%;  
+}
+
+#roomSectionThreeButtonOne {
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    border-top: 2px solid white; 
+    border-left: 2px solid white; 
+    padding: 3%;
+    background-color: white;
+    width: 33%; 
+    height: 100%;  
+}
+
+#roomSectionThreeButtonTwo{
+    border-top: 2px solid white; 
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 3%;
+    background-color: white;
+    width: 33%; 
+    height: 100%;
+}
+
+#roomSectionThreeButtonThree{
+    border-right: 2px solid white;
+    border-top: 2px solid white; 
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 3%;
+    background-color: white;
+    width: 33%; 
+    height: 100%;
+}
+
+#roomSectionThreeButtonOne:hover {
+    background-color: black;  
+    color: white; 
+    cursor: pointer
+}
+
+#roomSectionThreeButtonTwo:hover {
+    background-color: black;  
+    color: white; 
+    cursor: pointer
+}
+
+#roomSectionThreeButtonThree:hover {
+    background-color: black;  
+    color: white; 
+    cursor: pointer
+}
+
+
+
+
+
+
+@media (max-width: 900px){
+    /* ROOM SECTION ONE */ 
+    #roomSectionOneTest {
+        font-size: 25px; 
+     }
+    /* ROOM SECTION TWO */
+    #roomsSectionTwo{
+        display: grid;
+        justify-items: center;
+    }
+     #roomSectionTwoQuote{
+        left: 0%; 
+        top: 0; 
+        width: 100%; 
+        font-size: 25px; 
+    }
+    #roomSectionTwoImg{
+        left: 0; 
+        bottom: 0; 
+        width: 100%; 
+     }  
+     #roomSectionTwoDescription {
+        position: static; 
+        text-align: center;
+        width: 90%; 
+        font-size: 20px;  
+        margin: 3%; 
+    };
+}

@@ -1,0 +1,62 @@
+.roomViewContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .5fr 2fr 2fr;
+    grid-template-areas:
+    "roomTitle roomTitle"
+    "roomPic roomPic"
+    "roomDesc roomAmen";
+    margin-bottom: 1%; 
+    margin-top: 1%; 
+    padding-top: 2%;
+    padding-bottom: 2%; 
+    justify-items: center;
+    align-items: center;
+    width: 80%; 
+
+}
+
+
+.roomViewTextTitle{
+    grid-area: roomTitle;
+    font-size: 35px;
+    border: double 5px black; 
+    padding: 2%; 
+    width: 50%; 
+    text-align: center;
+    margin: 2%;
+}
+
+.roomViewImageContainer{
+    grid-area: roomPic;
+    display: grid;
+    justify-items: center;
+}
+
+.roomViewImage {
+    width: 80%; 
+}
+
+.roomViewDescription{
+    grid-area: roomDesc;
+    margin: 2%; 
+    padding: 2%;
+    width: 90%; 
+}
+
+.roomViewTextAmenities{
+    grid-area: roomAmen;
+    margin: 2%; 
+    padding: 2%;
+    width: 75%;
+    text-align: center;
+}
+
+@media (max-width: 900px){
+    .roomViewContainer {
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: .5fr 1fr 2fr;
+        width: 100%; 
+       
+    }
+}

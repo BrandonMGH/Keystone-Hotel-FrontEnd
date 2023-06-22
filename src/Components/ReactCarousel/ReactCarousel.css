@@ -1,0 +1,35 @@
+
+/* MAIN CAROUSEL */ 
+
+#carouselTextOne, #carouselTextTwo, #carouselTextThree, #carouselTextFour {
+    color: white; 
+    background: #00000066;
+}
+
+#carouselTitleTextOne, #carouselTitleTextTwo, #carouselTitleTextThree, #carouselTitleTextFour {
+    font-size: 50px; 
+}
+
+.carouselTitleLink{
+    text-decoration: none;
+    color: white; 
+    font-size: 24px;
+}
+
+.carouselTitleLink:hover{
+    color: blue; 
+}
+
+#carouselImgOne, #carouselImgTwo, #carouselImgThree, #carouselImgFour {
+    width: 100%;
+    height: 900px; 
+}
+
+@media (max-width: 900px) {
+    #carouselTitleTextOne, #carouselTitleTextTwo, #carouselTitleTextThree, #carouselTitleTextFour {
+        font-size: 20px; 
+    }
+    .carouselTitleLink{
+        font-size: 12px;
+    }
+}

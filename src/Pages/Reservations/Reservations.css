@@ -1,0 +1,202 @@
+/* MODAL CONTAINER */
+
+.modalContentClose{
+    font-size: 30px;
+    font-weight: bold;
+    position: relative; 
+    right: 45%;
+    top: 10%; 
+    
+}
+.modalContentClose:hover {
+    color: blue; 
+    cursor: pointer;
+}
+
+.modalContentTitleText {
+    margin-top: 1%;
+    margin-bottom: 1%; 
+}
+
+.modalImage{
+    width: 35%;
+}
+
+.modalContentText {
+    margin-top: 0%;
+    margin-bottom: 0%; 
+}
+
+.modalContentInput {
+    margin-top: .25%;
+    margin-bottom: .25%; 
+}
+
+.modalContentLine {
+    width: 50%;
+    height: 2px;
+    background-color: rgba(0,0,0, .6);
+    height: 1;
+    margin-top: 2.5%; 
+    margin-bottom: 2.5%
+}
+
+#modalContentButton {
+    padding: 1%;
+    border: black solid 2px;
+    background-color: white;
+    color: black 
+}
+
+#modalContentButton:hover{
+    border: white solid 2px;
+    background-color: black; 
+    color: white;
+    cursor: pointer;
+}
+
+/*RESERVATION SECTION */
+
+#reservationSectionOne{
+    background-image: url('../../Images/MountainViewRoomThree.jpg');
+    height: 750px; 
+    background-size: cover;
+}
+
+
+#reservationSectionText {
+    position: relative; 
+    top: 40%;
+    left: 25%;
+    width: 50%;
+    padding: 1%; 
+    background-color: rgba(0,0,0, .6);
+    border-radius: 10px;
+    text-align: center;
+    font-size: 35px;
+    color: white;    
+}
+
+/* ROOM SECTION */ 
+
+
+.roomContainer {
+    display: grid; 
+    grid-template-columns: 1fr .75fr .75fr;
+    grid-template-rows: 1fr 1fr 1fr 3fr;
+    grid-template-areas: 
+    "blank blank blank"
+    "roomImage roomTitle roomTitle"
+    "roomImage roomSummary roomSummary"
+    "roomImage roomAmenities roomDescription";
+    background-color: white; 
+ 
+}
+
+.roomImageContainer {
+    grid-area: roomImage;
+    display: grid; 
+    justify-items: center;
+    align-items: center;
+
+}
+
+.roomImage {
+    width: 90%;
+    height: 50%; 
+}
+
+.roomButton{
+    width: 80%; 
+    background-color: white; 
+    color: black; 
+    padding: 3%; 
+    border: solid black 2px; 
+}
+
+.roomButton:hover {
+    background-color: black;
+    color: white; 
+    border: solid white 2px; 
+    cursor: pointer;
+}
+
+.roomTitleContainer {
+    grid-area: roomTitle;
+    text-align: center;
+    background-color: rgba(125,125,125, .1); 
+    margin: 1%; 
+}
+
+.roomTitle{
+    font-size: 25px; 
+}
+
+.roomSummaryContainer {
+    grid-area: roomSummary; 
+    background-color: rgba(125,125,125, .1); 
+    margin: 1%; 
+}
+
+.roomSummary{
+    padding-left: 2%;
+    padding-right: 2%;  
+    text-align: center; 
+}
+
+.roomAmenitiesContainer {
+    grid-area: roomAmenities;
+    background-color: rgba(125,125,125, .1); 
+    margin: 1%; 
+}
+
+.roomAmenities{
+    padding:5%; 
+}
+
+.roomDescriptionContainer {
+    grid-area: roomDescription;
+    background-color: rgba(125,125,125, .1); 
+    margin: 1%; 
+}
+
+.roomDescription{
+    padding:5%; 
+}
+
+@media (max-width: 900px){
+    /* MODAL SECTION */
+    .modalImage{
+        height: 20%;
+        width: 40%; 
+    }
+    /* RESERVATION SECTION */
+    #reservationSectionText {
+      font-size: 25px;    
+    }
+    /*ROOM SECTION*/
+    .roomContainer {
+        display: block; 
+        background-color: white; 
+        text-align: center; 
+    }
+    .roomImage {
+        width: 85%;
+        height: 250px; 
+        margin: 2%;  
+    }
+    
+    
+}
+
+@media (max-height: 500px){
+    .modalContentTitleText, .modalContentTitleText, .modalContentText, .modalContentTitleText {
+        font-size: 12px; 
+    }
+}
+
+@media (max-height: 650px){
+    .modalImage{
+        display: none;
+    }
+}

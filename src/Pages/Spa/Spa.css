@@ -1,0 +1,150 @@
+/*SPA SECTION ONE */
+
+#spaSectionOne{
+    height: 750px; 
+    background-image: url('../../Images/SpaReception.jpg');
+    background-size: cover; 
+}
+
+#spaSectionOneTitle{
+    position:relative;
+    top: 40%;
+    left: 25%;
+    width: 50%; 
+    padding: 1%; 
+    font-size: 35px;
+    text-align: center; 
+    color: white; 
+    background: rgba(0,0,0,.5);
+    border-radius: 10px;
+}
+
+/*SPA SECTION TWO*/
+
+#spaSectionTwo{
+    height: 750px; 
+}
+
+#spaSectionTwoTitleContainer {
+    position: relative;
+    top: 50px;
+    left: 5%;
+    font-size: 34px; 
+    width: 50%; 
+}
+
+#spaSectionTwoImageContainer{
+    position:relative;
+    left: 40%; 
+    bottom: 200px; 
+    width: 60%; 
+
+}
+
+#spaSectionTwoImage{
+    width: 100%; 
+}
+
+#spaSectionTwoDescriptionContainer{
+    width: 50%;
+    position: relative;
+    bottom: 400px;
+    left: 5%; 
+    padding: 3%; 
+    border-radius: 10px;
+    background-color: rgba(0, 34, 145, 0.5);
+    font-size: 20px; 
+}
+
+/* SPA SECTION THREE */
+
+#spaSectionThree {
+    height: 750px; 
+    display:grid; 
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr ;
+    grid-template-areas: 
+    "spaText spaImage"
+    "spaText spaImage";
+    padding-bottom: 5%; 
+    background-color: rgba(0, 34, 145, 0.1);    
+}
+
+#spaSectionThreeText {
+    grid-area: spaText;
+    text-align: center; 
+}
+
+#spaSectionThreeTitle{
+    font-size: 36px; 
+    border-bottom: double 5px black;
+    margin-left: 5%;
+    margin-right: 5%; 
+}
+
+
+#spaSectionThreeImageContainer{
+    grid-area: spaImage;
+    display: grid;
+    justify-items: center;
+    align-content: center; 
+}
+
+#spaSectionThreeImage {
+    width: 90%;
+    height: 90%;
+}
+
+@media (max-width: 900px){
+    /*SPA SECTION TWO*/
+       #spaSectionTwo{
+           display: grid;
+           justify-items: center;
+           
+       }
+       #spaSectionTwoTitleContainer{
+           left: 0%; 
+           top: 0px; 
+           width: 100%; 
+           font-size: 25px; 
+       }
+       #spaSectionTwoImageContainer{
+           left: 0px; 
+           bottom: 0px; 
+           width: 50%; 
+       }
+   
+       #spaSectionTwoDescriptionContainer {
+           position: static; 
+           text-align: center;
+           width: 90%; 
+           left: 0%;
+           bottom: 0px;
+           background-color: rgba(0, 34, 145, 0.5);
+           font-size: 20px;  
+           margin: 3%; 
+           border-radius: 10px;
+       }
+       /* SPA SECTION THREE */
+       #spaSectionThree {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr ;
+        grid-template-areas: 
+        "spaImage spaImage"
+        "spaText spaText";
+        padding-bottom: 250px; 
+        padding-top: 25px; 
+       }
+       #spaSectionThreeTitle{
+        font-size: 28px; 
+      
+       }
+       #spaSectionThreeImage {
+        width: 90%;
+        height: 250px; 
+       }
+       #spaSectionFour{
+           margin-top: 5%; 
+       }
+     
+   }
